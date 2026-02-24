@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+*.log
+logs/
+reports/
+.env
+config/config.yaml
+venv/
+.idea/
+.vscode/
+.allure/
+*.pytest_cache/
+*.coverage
+htmlcov/
+*.db
