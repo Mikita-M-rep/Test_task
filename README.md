@@ -1,3 +1,8 @@
+## Installation
+```
+pip install -r requirements.txt
+```
+
 ## UI Execution
 
 ### Test task completed using Python + Playwright + Pytest
@@ -14,16 +19,18 @@ Run tests in Firefox:
 pytest --browser firefox
 ```
 
-Installation
-```
-pip install -r requirements.txt
-```
-
 ## API Execution
 ### Test task completed using Python + Requests + Pytest
 
 ```
 pytest petstore_tests -v
+```
+
+## Load Testing
+### Test task completed using Python + Locust
+
+```
+locust -f./load_testing/locustfile.py --host=https://www.n11.com
 ```
 
 
