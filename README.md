@@ -1,6 +1,12 @@
 ## Installation
+
+### Install the required packages:
 ```
 pip install -r requirements.txt
+```
+### Install the required browsers:
+```
+playwright install
 ```
 
 ## UI Execution

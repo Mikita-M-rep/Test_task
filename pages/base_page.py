@@ -6,7 +6,11 @@ class BasePage:
         self._page = page
 
     def visit(self, url: str):
-        return self._page.goto(url, wait_until="networkidle")
+        return self._page.goto(url, wait_until="load")
+
+    @property
+    def context(self):
+        return self._page.context
 
     def is_cookies_present(self):
         return self._page.locator("#cookie-law-info-bar").is_visible()
@@ -19,4 +23,4 @@ class BasePage:
             self._page.locator("#wt-cli-accept-all-btn").click()
 
     def is_page_opened(self, url: str = None):
-        return self._page.url == url
+        return url in self._page.url
